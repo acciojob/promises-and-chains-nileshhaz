@@ -15,7 +15,7 @@ const handleForm = (e)=>{
 	new Promise((res,err)=>{
 		setTimeout(()=>{
 			if(age>18) res(`Welcome, ${name}. You can vote.`)
-			else err("Oh sorry . You aren't old enough.")
+			else err(`Oh sorry ${name}. You aren't old enough.`)
 		},4000)
 	}).then((mess)=>{
 		manageAlert(mess)

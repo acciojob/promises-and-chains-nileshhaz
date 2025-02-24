@@ -6,7 +6,7 @@ const handleForm = (e)=>{
 	const button = document.getElementById("btn");
 
 	if(!age || !name){
-		manageAlert("Please enter valid details.")
+		manageAlert("Please enter valid details")
 		return 
 	}
 
